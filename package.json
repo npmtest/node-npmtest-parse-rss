@@ -1,1 +1,40 @@
-{     "devDependencies": {         "parse-rss": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-parse-rss",     "homepage": "https://github.com/npmtest/node-npmtest-parse-rss",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-parse-rss.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [parse-rss (v1.0.3)](https://github.com/nikezono/node-parse-rss)  [![npm package](https://img.shields.io/npm/v/npmtest-parse-rss.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-parse-rss) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-parse-rss.svg)](https://travis-ci.org/npmtest/node-npmtest-parse-rss)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "parse-rss": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-parse-rss",
+    "keywords": [
+        "coverage",
+        "test",
+        "parse-rss"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_parse_rss.js",
+    "name": "npmtest-parse-rss",
+    "nameAlias": "npmtest_parse_rss",
+    "nameOriginal": "npmtest-parse-rss",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-parse-rss.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
