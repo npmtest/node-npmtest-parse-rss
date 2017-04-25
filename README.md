@@ -1,6 +1,6 @@
 # npmtest-parse-rss
 
-#### test coverage for  [parse-rss (v1.0.3)](https://github.com/nikezono/node-parse-rss)  [![npm package](https://img.shields.io/npm/v/npmtest-parse-rss.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-parse-rss) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-parse-rss.svg)](https://travis-ci.org/npmtest/node-npmtest-parse-rss)
+#### basic test coverage for  [parse-rss (v1.0.3)](https://github.com/nikezono/node-parse-rss)  [![npm package](https://img.shields.io/npm/v/npmtest-parse-rss.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-parse-rss) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-parse-rss.svg)](https://travis-ci.org/npmtest/node-npmtest-parse-rss)
 
 #### parse rss feeds
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-parse-rss/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-parse-rss/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-parse-rss/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-parse-rss/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-parse-rss/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-parse-rss/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-parse-rss/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-parse-rss/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-parse-rss/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-parse-rss/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-parse-rss/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-parse-rss/build/coverage.html/index.html)
 
@@ -96,7 +96,8 @@
     "scripts": {
         "test": "grunt test"
     },
-    "version": "1.0.3"
+    "version": "1.0.3",
+    "bin": {}
 }
 ```
 
